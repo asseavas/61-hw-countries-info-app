@@ -4,3 +4,9 @@
   padding: 2rem;
   text-align: center;
 }
+
+.countriesList {
+  max-height: calc(100vh - 65px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}

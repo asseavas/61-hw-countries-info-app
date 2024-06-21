@@ -40,8 +40,8 @@ const App = () => {
     <>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-5">
-            <ul>
+          <div className="col-4 countriesList">
+            <ul className="text-start">
               {countries.map(country => (
                 <CountryItem
                   key={country.alpha3Code}
@@ -50,7 +50,7 @@ const App = () => {
               ))}
             </ul>
           </div>
-          <div className="col-7">
+          <div className="col-8">
 
           </div>
         </div>
