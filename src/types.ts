@@ -7,8 +7,9 @@ export interface ApiCountry {
   name: string;
   alpha3Code: string;
   capital: string;
+  region: string;
   subregion: string;
   population: number;
-  borders: [''];
+  borders: string[];
   flag: string;
 }

@@ -1,11 +1,10 @@
 .countryItem {
   background: #fbfbfb;
   list-style: none;
-  border: 2px solid #e8ecf6;
+  border: 2px solid #e9ecef;
 }
 
 .countryItem:hover,
 .countryItem:active {
-  background: #d2dce6;
-  border: 2px solid #d2dce6;
+  background: #e9ecef;
 }
