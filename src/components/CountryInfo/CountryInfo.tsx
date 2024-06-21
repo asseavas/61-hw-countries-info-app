@@ -34,11 +34,15 @@ const CountryInfo: React.FC<Props> = ({ code }) => {
     void fetchData();
   }, [fetchData]);
 
+  if (code === null) {
+    return <div className="w-100 text-center text-body-tertiary">Choose the country</div>;
+  }
+
   return country && (
     <div className="d-flex text-start flex-column gap-2">
       <h2>{country.name} ({country.alpha3Code})</h2>
       <img src={country.flag} alt={`Flag of ${country.name}`} style={{ width: '200px', height: 'auto' }} />
-      <p><strong>Capital: </strong>{country.capital}</p>
+      <p className="mt-2"><strong>Capital: </strong>{country.capital}</p>
       <p><strong>Population: </strong>{country.population}</p>
       <p><strong>Region: </strong>{country.region}</p>
       <p><strong>Subregion: </strong>{country.subregion}</p>
